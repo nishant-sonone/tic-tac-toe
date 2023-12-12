@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <h1 class="game-title">Sahaana's Tic-Tac-Toe</h1>
+  <p class="player-text">First player uses X</p>
+  <div id="game-container" class="game-container"></div>
+  <div id="result-screen" class="result-screen">
+    <div id="result-message" class="result-message"></div>
+    <button id="new-game-btn" class="new-game-btn" onclick="startNewGame()">New Game</button>
+  </div>
+
+  <!-- Add this button at the end of the page -->
+  <button id="restart-game-btn" class="restart-game-btn">Restart Game</button>
+
+  <script src="script.js"></script>
+  <script>
+    function startNewGame() {
+      resultScreen.style.display = 'none';
+      currentPlayer = 'X';
+      board = ['', '', '', '', '', '', '', '', ''];
+      renderBoard();
+    }
+
+   
+  </script>
+</body>
+
+</html>
